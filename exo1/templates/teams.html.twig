@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste des équipes</title>
+</head>
+<body>
+
+    <h1>Liste des équipes</h1>
+
+    {% for team in teams %}
+        <div>
+            <img src="{{ team.image }}" alt="{{ team.nom }}" width="100">
+            <h2>{{ team.nom }}</h2>
+            <p>{{ team.description }}</p>
+        </div>
+        <hr>
+    {% endfor %}
+
+</body>
+</html>
